@@ -1,0 +1,218 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: linear-gradient(to bottom right, #d0e9ff, #e0f3ff);
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+.btn {
+  background-color: #febe43;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.highlight {
+  color: orange;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f2f7ff;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+.hero-img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Why Web */
+.why-web {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.why-web h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Mission Section */
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f7ff;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.mission .text {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 1rem;
+}
+.mission h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.mission img {
+  width: 220px;
+  max-width: 100%;
+}
+
+/* Inspiration */
+.inspiration {
+  text-align: center;
+  padding: 2rem 1rem;
+
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.inspiration h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.inspiration p {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
+
+/* Targets */
+.targets {
+  text-align: center;
+  padding: 2rem;
+}
+.targets h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.card {
+  background: linear-gradient(to bottom right, #f5faff, #c0eaff);
+  padding: 2rem;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 40px;
+  margin-bottom: 0.5rem;
+}
+.card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0f3ff;
+  margin-top: 2rem;
+}
+footer p {
+  font-family: monospace;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.social img {
+  width: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mission .text {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
